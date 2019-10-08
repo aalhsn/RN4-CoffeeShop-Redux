@@ -29,4 +29,15 @@ class CartItem extends Component {
   }
 }
 
-export default CartItem;
+const mapDispatchToProps = dispatch => ({
+  addItemToCart: item => dispatch(addItemToCart(item))
+});
+
+const mapStateToProps = state => ({
+  coffeeReducer: state.coffeeReducer
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(CartItem);
