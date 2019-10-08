@@ -15,11 +15,13 @@ class CartItem extends Component {
           </Text>
         </Left>
         <Body>
-          <Text style={{ color: "white" }}>{item.quantity}</Text>
+          <Text style={{ color: "white", marginLeft: 40 }}>
+            {item.quantity}
+          </Text>
         </Body>
         <Right>
-          <Button transparent>
-            <Icon name="trash" style={{ color: "white", fontSize: 21 }} />
+          <Button>
+            <Text style={{ fontSize: 10 }}>del</Text>
           </Button>
         </Right>
       </ListItem>
